@@ -1,4 +1,4 @@
-package uebung2.parameterisierte.factory.methode;
+package com.parameterisierte.factory.methode.reto;
 
 /**
  * Created by rk on 28.09.17.
