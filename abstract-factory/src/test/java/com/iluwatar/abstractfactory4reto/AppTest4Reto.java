@@ -20,7 +20,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory;
+package com.iluwatar.abstractfactory4reto;
 
 import org.junit.Test;
 
@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * Tests that Abstract Factory example runs without errors.
  */
-public class AppTest {
+public class AppTest4Reto {
   @Test
   public void test() throws IOException {
     String[] args = {};

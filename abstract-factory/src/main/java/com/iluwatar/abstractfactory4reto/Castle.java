@@ -20,19 +20,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory.reto;
+package com.iluwatar.abstractfactory4reto;
 
 /**
  * 
- * ElfKing
+ * Castle interface
  *
  */
-public class ElfKing implements King {
+public interface Castle {
 
-  static final String DESCRIPTION = "This is the Elven king!";
-
-  @Override
-  public String getDescription() {
-    return DESCRIPTION;
-  }
+  String getDescription();
 }

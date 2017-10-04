@@ -20,25 +20,24 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory.reto;
+package com.iluwatar.abstractfactory4reto;
 
 /**
  * 
- * ElfKingdomFactory concrete factory.
+ * OrcKingdomFactory concrete factory.
  * 
  */
-public class ElfKingdomFactory implements KingdomFactory {
+public class OrcKingdomFactory implements KingdomFactory {
 
   public Castle createCastle() {
-    return new ElfCastle();
+    return new OrcCastle();
   }
 
   public King createKing() {
-    return new ElfKing();
+    return new OrcKing();
   }
 
   public Army createArmy() {
-    return new ElfArmy();
+    return new OrcArmy();
   }
-
 }

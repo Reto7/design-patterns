@@ -20,16 +20,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory.reto;
+package com.iluwatar.abstractfactory4reto;
 
 /**
  * 
- * OrcArmy
+ * OrcCastle
  *
  */
-public class OrcArmy implements Army {
+public class OrcCastle implements Castle {
 
-  static final String DESCRIPTION = "This is the Orc Army!";
+  static final String DESCRIPTION = "This is the Orc castle!";
 
   @Override
   public String getDescription() {

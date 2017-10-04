@@ -20,18 +20,18 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+package com.iluwatar.abstractfactory4reto;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 /**
  * Test for abstract factory
  */
-public class AbstractFactoryTest {
+public class AbstractFactoryTest4Reto {
 
   private App app = new App();
   private KingdomFactory elfFactory;

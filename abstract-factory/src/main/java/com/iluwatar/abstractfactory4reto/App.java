@@ -20,10 +20,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory.reto;
+package com.iluwatar.abstractfactory4reto;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+
 
 /**
  * 
@@ -68,7 +70,7 @@ public class App {
   private void setKing(final King king) {
     this.king = king;
   }
-  
+
   Castle getCastle(final KingdomFactory factory) {
     return factory.createCastle();
   }
@@ -80,7 +82,7 @@ public class App {
   private void setCastle(final Castle castle) {
     this.castle = castle;
   }
-  
+
   Army getArmy(final KingdomFactory factory) {
     return factory.createArmy();
   }
@@ -92,10 +94,10 @@ public class App {
   private void setArmy(final Army army) {
     this.army = army;
   }
-  
+
   /**
    * Program entry point
-   * 
+   *
    * @param args
    *          command line args
    */
@@ -103,14 +105,18 @@ public class App {
 
     App app = new App();
 
-    LOGGER.info("Elf Kingdom");
-    app.createKingdom(new ElfKingdomFactory());
+    LOGGER.info("Elf Kingdom  (PARAMETERISIERT)");
+  // Anpassung App Code Zeile 107:
+      app.createKingdom(FactoryProducer.produceFactory("elf"));
+   // app.createKingdom(new ElfKingdomFactory());
     LOGGER.info(app.getArmy().getDescription());
     LOGGER.info(app.getCastle().getDescription());
     LOGGER.info(app.getKing().getDescription());
 
-    LOGGER.info("Orc Kingdom");
-    app.createKingdom(new OrcKingdomFactory());
+    LOGGER.info("Orc Kingdom  (PARAMETERISIERT)");
+  // Anpassung App Code Zeile 113:
+      app.createKingdom(FactoryProducer.produceFactory("orc"));
+  //  app.createKingdom(new OrcKingdomFactory());
     LOGGER.info(app.getArmy().getDescription());
     LOGGER.info(app.getCastle().getDescription());
     LOGGER.info(app.getKing().getDescription());

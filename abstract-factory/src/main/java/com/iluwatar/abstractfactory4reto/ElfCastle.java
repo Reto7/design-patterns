@@ -20,24 +20,19 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory.reto;
+package com.iluwatar.abstractfactory4reto;
 
 /**
  * 
- * OrcKingdomFactory concrete factory.
- * 
+ * ElfCastle
+ *
  */
-public class OrcKingdomFactory implements KingdomFactory {
+public class ElfCastle implements Castle {
 
-  public Castle createCastle() {
-    return new OrcCastle();
-  }
+  static final String DESCRIPTION = "This is the Elven castle!";
 
-  public King createKing() {
-    return new OrcKing();
-  }
-
-  public Army createArmy() {
-    return new OrcArmy();
+  @Override
+  public String getDescription() {
+    return DESCRIPTION;
   }
 }
