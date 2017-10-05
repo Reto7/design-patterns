@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.iluwatar.decorator</OriginalElement>
+  <nodes>
+    <node x="0.0" y="348.0">com.iluwatar.decorator.ClubbedTroll</node>
+    <node x="246.5" y="0.0">com.iluwatar.decorator.Troll</node>
+    <node x="341.0" y="162.0">com.iluwatar.decorator.SimpleTroll</node>
+    <node x="222.0" y="348.0">com.iluwatar.decorator.DoubleClubbedTroll</node>
+    <node x="103.0" y="150.0">com.iluwatar.decorator.TrollDecorator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.iluwatar.decorator.ClubbedTroll" target="com.iluwatar.decorator.TrollDecorator">
+      <point x="0.0" y="-62.5" />
+      <point x="101.0" y="323.0" />
+      <point x="157.5" y="323.0" />
+      <point x="-54.5" y="74.0" />
+    </edge>
+    <edge source="com.iluwatar.decorator.SimpleTroll" target="com.iluwatar.decorator.Troll">
+      <point x="0.0" y="-62.0" />
+      <point x="442.0" y="125.0" />
+      <point x="367.25" y="125.0" />
+      <point x="40.25" y="50.0" />
+    </edge>
+    <edge source="com.iluwatar.decorator.DoubleClubbedTroll" target="com.iluwatar.decorator.TrollDecorator">
+      <point x="0.0" y="-62.5" />
+      <point x="323.0" y="323.0" />
+      <point x="266.5" y="323.0" />
+      <point x="54.5" y="74.0" />
+    </edge>
+    <edge source="com.iluwatar.decorator.TrollDecorator" target="com.iluwatar.decorator.Troll">
+      <point x="0.0" y="-74.0" />
+      <point x="212.0" y="125.0" />
+      <point x="286.75" y="125.0" />
+      <point x="-40.25" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="357.0" y="99.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
