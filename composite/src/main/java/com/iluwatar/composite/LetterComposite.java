@@ -41,7 +41,7 @@ public abstract class LetterComposite {
 
   public void add(LetterComposite letter) {
     listeAllerWordsUndLetters.add(letter);
-    System.out.println("--->" +letter.getClass().getName());
+    //System.out.println("--->" +letter.getClass().getName());
   }
 
   public void remove(LetterComposite letter) {
