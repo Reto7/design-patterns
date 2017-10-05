@@ -6,11 +6,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @ERL.: implementiere einen klassenbasierten Adapter für ein {@link FishingBoat}
- * Naming vorher: RealBattleFishingBoat
+ * Naming vorher: BattleFishingBoat2
  */
-public class RealBattleFishingBoat extends FishingBoat implements BattleShip {
+public class BattleFishingBoat2 extends FishingBoat implements BattleShip {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(RealBattleFishingBoat.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(BattleFishingBoat2.class);
 
   @Override
   public void fire() {

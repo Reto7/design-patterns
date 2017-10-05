@@ -62,10 +62,10 @@ public class App {
     captainOfFirstFisherBoat.fire();
 
     /**
-     * @ERL: aktiviere sobald {@link RealBattleFishingBoat} umgesetzt
+     * @ERL: aktiviere sobald {@link BattleFishingBoat2} umgesetzt
      * klassenbasierten Adapter
      */
-    Captain captainOfSecondFisherBoat = new Captain(new RealBattleFishingBoat());
+    Captain captainOfSecondFisherBoat = new Captain(new BattleFishingBoat2());
     captainOfSecondFisherBoat.move();
     captainOfSecondFisherBoat.fire();
 

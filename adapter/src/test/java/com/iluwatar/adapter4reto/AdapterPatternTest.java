@@ -85,11 +85,11 @@ public class AdapterPatternTest {
 
   @Test
   public void testClassAdapter() {
-    RealBattleFishingBoat realBattleFishingBoat = spy(new RealBattleFishingBoat());
-    beans.put(BATTLESHIP_BEAN, realBattleFishingBoat);
+    BattleFishingBoat2 battleFishingBoat2 = spy(new BattleFishingBoat2());
+    beans.put(BATTLESHIP_BEAN, battleFishingBoat2);
 
     Captain captain = new Captain();
-    captain.setBattleship((RealBattleFishingBoat) beans.get(BATTLESHIP_BEAN));
+    captain.setBattleship((BattleFishingBoat2) beans.get(BATTLESHIP_BEAN));
     beans.put(CAPTAIN_BEAN, captain);
 
     // when captain moves
