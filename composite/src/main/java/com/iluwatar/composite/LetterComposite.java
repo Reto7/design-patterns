@@ -23,7 +23,6 @@
 package com.iluwatar.composite;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 
@@ -32,37 +31,62 @@ import java.util.List;
  * TIPP: Lasst Euch vom Namen "Composite" nicht verwirren. Die Klasse ({@link LetterComposite} entspricht der "Component" (Diagramm Buch S. 214)
  * Die Klassen ({@link Word} und ({@link Sentence} entsprechen je einem "Composite" (aus dem Diagramm Buch S. 214)
  *
- * @todo: implementiere die für eine Composite-Klasse typischen Methoden
+ * @ERL.: implementiere die für eine Composite-Klasse typischen Methoden
+ *
  */
 public abstract class LetterComposite {
 
+  ArrayList<LetterComposite> listeAllerWordsUndLetters = new ArrayList<>();
+
+
   public void add(LetterComposite letter) {
+    listeAllerWordsUndLetters.add(letter);
+    System.out.println("--->" +letter.getClass().getName());
   }
 
   public void remove(LetterComposite letter) {
+    listeAllerWordsUndLetters.remove(letter);
   }
 
   public LetterComposite getChild(int index) {
-    return null;
+    //System.out.println("index:");
+    return listeAllerWordsUndLetters.get(index);
   }
 
   public int count() {
-    return 0;
+    return listeAllerWordsUndLetters.size();
   }
 
+  // ist abstract, muss jeder selber implementieren
+  // z.B. beim Sentence ein Punkt am Schluss. Oder bei den Woren ein Leerschlag
   protected abstract void printThisBefore();
 
+  // ist abstract, muss jeder selber implementieren
+  // z.B. beim Sentence ein Punkt am Schluss. Oder bei den Woren ein Leerschlag
   protected abstract void printThisAfter();
 
-  /**
+
+  /** -----------------------------------------------------------------------------------
    * Print
-   * TIPP: Rekursive Method, ruft sich also selber auf
+   * Rekursive Method, ruft sich also selber auf
+   * Die ganze Hierarchie runter
+   * -----------------------------------------------------------------------------------
    */
   public void print() {
+
+    // wird auf jedem aufgerufen, egal ob letter, word, sentence
+    // macht fast nichts, nur z.B. beim Sentence ein Punkt am Schluss. Oder bei den Woren ein Leerschlag
     printThisBefore();
 
-    // todo: iteriere über childern
+    // ERL.: iteriere über childern      // andere schreibweise: listeAllerWordsUndLetters.forEach(LetterComposite::print);
+    for (LetterComposite lc : listeAllerWordsUndLetters) {
+      lc.print();
+    }
 
+
+    // wird auf jedem aufgerufen, egal ob letter, word, sentence
+    // macht fast nichts, nur z.B. beim Sentence ein Punkt am Schluss. Oder bei den Woren ein Leerschlag
     printThisAfter();
+
   }
 }

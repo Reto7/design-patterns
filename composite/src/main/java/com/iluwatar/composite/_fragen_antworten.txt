@@ -1,0 +1,5 @@
+a) Weshalb ist die Methode getChild in der Klasse LetterComposite heikel?
+weil LETTER (also ein Buchstabe) ein "Leaf"-Objekt ist und somit keine weiteren Kinder mehr haben kann
+
+b) Die Methode add() in derselben Klasse ist ebenfalls heikel. Was wäre eine sinnvolle Lösung?
+-x-

@@ -36,7 +36,7 @@ public class Sentence extends LetterComposite {
    */
   public Sentence(List<Word> words) {
     for (Word w : words) {
-      this.add(w);
+      this.add(w); // zur listeAllerWordsUndLetters
     }
   }
 
@@ -47,6 +47,6 @@ public class Sentence extends LetterComposite {
 
   @Override
   protected void printThisAfter() {
-    System.out.print(".");
+    System.out.print(".\n");
   }
 }
