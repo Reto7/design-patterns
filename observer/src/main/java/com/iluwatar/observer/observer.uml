@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.iluwatar.observer</OriginalElement>
+  <nodes>
+    <node x="-307.0" y="463.0">com.iluwatar.observer.AppTest</node>
+    <node x="-158.0" y="461.0">com.iluwatar.observer.WeatherObserverTest</node>
+    <node x="-130.0" y="124.0">com.iluwatar.observer.Weather</node>
+    <node x="-76.0" y="610.0">com.iluwatar.observer.HobbitsTest</node>
+    <node x="557.0" y="209.0">com.iluwatar.observer.Orcs</node>
+    <node x="23.0" y="470.0">com.iluwatar.observer.WeatherTest</node>
+    <node x="-342.0" y="70.0">com.iluwatar.observer.App</node>
+    <node x="446.5" y="106.0">com.iluwatar.observer.WeatherObserver</node>
+    <node x="657.0" y="325.0">com.iluwatar.observer.utils</node>
+    <node x="336.0" y="209.0">com.iluwatar.observer.Hobbits</node>
+    <node x="473.0" y="325.0">com.iluwatar.observer.WeatherType</node>
+    <node x="-298.0" y="610.0">com.iluwatar.observer.OrcsTest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.iluwatar.observer.HobbitsTest" target="com.iluwatar.observer.WeatherObserverTest">
+      <point x="0.0" y="-26.5" />
+      <point x="33.0" y="585.0" />
+      <point x="-38.0" y="585.0" />
+      <point x="40.0" y="49.5" />
+    </edge>
+    <edge source="com.iluwatar.observer.Hobbits" target="com.iluwatar.observer.WeatherObserver">
+      <point x="0.0" y="-26.5" />
+      <point x="436.5" y="184.0" />
+      <point x="496.75" y="184.0" />
+      <point x="-50.25" y="26.5" />
+    </edge>
+    <edge source="com.iluwatar.observer.OrcsTest" target="com.iluwatar.observer.WeatherObserverTest">
+      <point x="0.0" y="-26.5" />
+      <point x="-189.0" y="585.0" />
+      <point x="-118.0" y="585.0" />
+      <point x="-40.0" y="49.5" />
+    </edge>
+    <edge source="com.iluwatar.observer.Orcs" target="com.iluwatar.observer.WeatherObserver">
+      <point x="0.0" y="-26.5" />
+      <point x="657.5" y="184.0" />
+      <point x="597.25" y="184.0" />
+      <point x="50.25" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="190.0" y="298.0" />
+  <SelectedNodes>
+    <node>com.iluwatar.observer.App</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

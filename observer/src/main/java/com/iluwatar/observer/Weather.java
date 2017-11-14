@@ -35,7 +35,7 @@ import java.util.List;
  *
  *
  * Die Klasse ist das Subject und enthält bereits Methoden zum Hinzufügen und Entfernen von Observern ({@link WeatherObserver})
- * @todo: es fehlt allerdings noch die Funktionalität um Observer über Änderungen zu benachrichten, füge diese hinzu
+ * @erl: es fehlt allerdings noch die Funktionalität um Observer über Änderungen zu benachrichten, füge diese hinzu
  */
 public class Weather {
 
@@ -47,6 +47,13 @@ public class Weather {
   public Weather() {
     observers = new ArrayList<>();
     currentWeather = WeatherType.SUNNY;
+  }
+
+  public void notifyObservers(){
+    for (WeatherObserver weatherObserver : this.observers){
+      weatherObserver.update(this.currentWeather);
+    }
+
   }
 
   public void addObserver(WeatherObserver obs) {
