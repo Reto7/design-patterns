@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
  * Spell strategy.
  *
  */
-public class SpellStrategy {
+public class SpellStrategy implements DragonSlayingStrategy {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(SpellStrategy.class);
 

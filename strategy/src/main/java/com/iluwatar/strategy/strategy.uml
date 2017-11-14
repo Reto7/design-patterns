@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.iluwatar.strategy</OriginalElement>
+  <nodes>
+    <node x="-340.0" y="18.0">com.iluwatar.strategy.DragonSlayer</node>
+    <node x="302.0" y="103.0">com.iluwatar.strategy.MeleeStrategy</node>
+    <node x="-404.0" y="-60.0">com.iluwatar.strategy.App</node>
+    <node x="151.0" y="103.0">com.iluwatar.strategy.SpellStrategy</node>
+    <node x="136.0" y="0.0">com.iluwatar.strategy.DragonSlayingStrategy</node>
+    <node x="0.0" y="103.0">com.iluwatar.strategy.ProjectileStrategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.iluwatar.strategy.ProjectileStrategy" target="com.iluwatar.strategy.DragonSlayingStrategy">
+      <point x="0.0" y="-26.5" />
+      <point x="65.5" y="78.0" />
+      <point x="162.83333333333331" y="78.0" />
+      <point x="-53.666666666666686" y="26.5" />
+    </edge>
+    <edge source="com.iluwatar.strategy.SpellStrategy" target="com.iluwatar.strategy.DragonSlayingStrategy">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.iluwatar.strategy.MeleeStrategy" target="com.iluwatar.strategy.DragonSlayingStrategy">
+      <point x="0.0" y="-26.5" />
+      <point x="367.5" y="78.0" />
+      <point x="270.16666666666663" y="78.0" />
+      <point x="53.66666666666663" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="170.0" y="92.0" />
+  <SelectedNodes>
+    <node>com.iluwatar.strategy.DragonSlayer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

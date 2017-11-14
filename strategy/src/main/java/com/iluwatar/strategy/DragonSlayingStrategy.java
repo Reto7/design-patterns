@@ -29,6 +29,6 @@ package com.iluwatar.strategy;
  */
 public interface DragonSlayingStrategy {
 
-  // @todo: add method
-
+    // @erl: add method
+    void execute();
 }
