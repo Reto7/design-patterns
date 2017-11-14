@@ -43,7 +43,7 @@
       <module name="java-design-patterns" target="1.8" />
       <module name="observer" target="1.8" />
       <module name="strategy" target="1.8" />
-      <module name="template-method" target="1.5" />
+      <module name="template-method" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
